@@ -1,11 +1,7 @@
 import java.util.ArrayList;
 public class FoodCourt
 {
-    ArrayList <Restaurant> RestaurantArray;
-    public FoodCourt ()
-    {
-        RestaurantArray = new ArrayList <Restaurant>();
-    }
+    ArrayList <Restaurant> RestaurantArray = new ArrayList <Restaurant>();
     public void AddRestaurant(Restaurant newRestaurant)
     {
         RestaurantArray.add(newRestaurant);

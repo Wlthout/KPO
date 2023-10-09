@@ -2,14 +2,10 @@ import java.util.ArrayList;
 public class Restaurant
 {
     String NameRestaurant;
-    ArrayList <Order> OrderArray;
+    ArrayList <Order> OrderArray = new ArrayList<Order>();
     public Restaurant (String name)
     {
         NameRestaurant = name;
-        if (OrderArray == null)
-        {
-            OrderArray = new ArrayList<Order>();
-        }
     }
     public void AddOrder (Order NewOrder)
     {
