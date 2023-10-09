@@ -1,8 +1,10 @@
 public class Order
 {
     Dish [] DishArray;
-    public void Input(Dish [] array)
+    static int id = 0;
+    public Order (Dish [] array)
     {
+        id++;
         DishArray = array;
     }
     public double SumOrder ()
@@ -13,5 +15,10 @@ public class Order
             sumOrder += DishArray[i].Price;
         }
         return sumOrder;
+    }
+    public static void CountOrder()
+    {
+        System.out.println("Amount of orders is " + id);
+        //DataBase
     }
 }

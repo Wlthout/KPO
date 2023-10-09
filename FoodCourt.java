@@ -2,12 +2,12 @@ import java.util.ArrayList;
 public class FoodCourt
 {
     ArrayList <Restaurant> RestaurantArray;
+    public FoodCourt ()
+    {
+        RestaurantArray = new ArrayList <Restaurant>();
+    }
     public void AddRestaurant(Restaurant newRestaurant)
     {
-        if (RestaurantArray == null)
-        {
-            RestaurantArray = new ArrayList <Restaurant>();
-        }
         RestaurantArray.add(newRestaurant);
     }
     public void Output ()

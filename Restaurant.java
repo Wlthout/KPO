@@ -3,7 +3,7 @@ public class Restaurant
 {
     String NameRestaurant;
     ArrayList <Order> OrderArray;
-    public void AddName(String name)
+    public Restaurant (String name)
     {
         NameRestaurant = name;
         if (OrderArray == null)
