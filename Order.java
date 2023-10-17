@@ -1,3 +1,6 @@
+import java.util.Arrays;
+import java.util.Comparator;
+
 public class Order
 {
     Dish [] DishArray;
@@ -21,4 +24,13 @@ public class Order
         System.out.println("Amount of orders is " + id);
         //DataBase
     }
+    public void OutputEverything()
+    {
+        System.out.print("Data of order\nName " + "Price " + "Size\n");
+        for (int i = 0; i < DishArray.length; i++)
+        {
+            DishArray[i].Output();
+        }
+    }
+
 }

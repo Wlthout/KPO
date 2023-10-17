@@ -6,4 +6,9 @@ public class Food extends Dish
         super(nameFood, price);
         WeightFood = weightFood;
     }
+    @Override
+    public void Output()
+    {
+        System.out.println(NameDish + " " + Price + " " + WeightFood + "g");
+    }
 }

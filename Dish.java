@@ -1,4 +1,4 @@
-public class Dish //блюдо
+public abstract class Dish //блюдо
 {
     protected String NameDish;
     protected double Price;
@@ -7,5 +7,10 @@ public class Dish //блюдо
         NameDish = name;
         Price = price;
     }
+    public double GetPrice()
+    {
+        return Price;
+    }
+    public abstract void Output();
     //добавить кбжу и граммовки
 }

@@ -8,12 +8,12 @@ public class Main {
         array[3] = Factory.CreateDrinks("Fanta", 3.4,500);
         array[4] = Factory.CreateDrinks("Coca-cola", 3.4, 500);
         array[5] = Factory.CreateDrinks("Sprite",3.2 ,400);
-        Order orderOne = Factory.CreateOrder(array);
+        Order order = Factory.CreateOrder(array);
         Restaurant restaurant  = Factory.CreateRestaurant("Texas Chicken");
-        restaurant.AddOrder(orderOne);
-        FoodCourt food = Factory.CreateFoodCourt();
-        food.AddRestaurant(restaurant);
-        food.Output();
+        restaurant.AddOrder(order);
+        FoodCourt foodCourt = Factory.CreateFoodCourt();
+        foodCourt.AddRestaurant(restaurant);
+        foodCourt.Output();
         Order.CountOrder();
     }
 }
