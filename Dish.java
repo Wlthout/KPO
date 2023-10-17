@@ -1,10 +1,11 @@
 public class Dish //блюдо
 {
-    String NameDish;
-    double Price;
+    protected String NameDish;
+    protected double Price;
     public Dish (String name, double price)
     {
         NameDish = name;
         Price = price;
     }
+    //добавить кбжу и граммовки
 }
